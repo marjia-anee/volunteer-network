@@ -10,14 +10,14 @@ const TasksDetails = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/regDetails?email=' + loggedInUser.email)
+        fetch('https://murmuring-crag-22094.herokuapp.com/regDetails?email=' + loggedInUser.email)
             .then(response => response.json())
             .then(data => setVolunteerInfo(data));
 
     }, [])
 
     const deleteTask = (_id) => {
-        fetch(`http://localhost:5000/regDetailsDelete/${_id}`, {
+        fetch(`https://murmuring-crag-22094.herokuapp.com/regDetailsDelete/${_id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'

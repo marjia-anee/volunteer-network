@@ -7,7 +7,7 @@ const Events = () => {
     const handleAddTasks = () => {
 
 
-        fetch('http://localhost:5000/addTasks', {
+        fetch('https://murmuring-crag-22094.herokuapp.com/addTasks', {
             method: 'POST',
             headers: { 
                 'Content-Type': 'application/json'

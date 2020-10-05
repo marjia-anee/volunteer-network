@@ -8,7 +8,7 @@ const Home = () => {
     const [tasks, setTasks] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/tasks')
+        fetch('https://murmuring-crag-22094.herokuapp.com/tasks')
             .then(response => response.json())
             .then(data => setTasks(data))
     }, [])

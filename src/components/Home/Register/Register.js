@@ -21,7 +21,7 @@ const Register = () => {
     const { register, handleSubmit, watch, errors } = useForm();
 
     useEffect(() => {
-        fetch('http://localhost:5000/task/'+ _id)
+        fetch('https://murmuring-crag-22094.herokuapp.com/task/'+ _id)
             .then(res => res.json())
             .then(data => setTasks(data))
     }, [_id])
@@ -30,7 +30,7 @@ const Register = () => {
         console.log('form submitted', data);
         const submittedItems = {...data, ...tasks, registerTime: new Date() };
 
-        fetch('http://localhost:5000/addReg', {
+        fetch('https://murmuring-crag-22094.herokuapp.com/addReg', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

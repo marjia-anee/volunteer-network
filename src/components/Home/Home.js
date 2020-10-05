@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import fakeData from '../../fakeData/fakeData';
 import VolunteerTasks from './VolunteerTasks/VolunteerTasks';
 import './Home.css';
 

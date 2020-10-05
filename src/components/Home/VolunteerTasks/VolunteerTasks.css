@@ -5,9 +5,9 @@
     border-radius: 0px 0px 10px 10px;
     background: #FF7044;
     position:relative;
-    bottom:20%;
     text-align: center;
     font-size: 25px;
     cursor: pointer;
+    margin-bottom: 30%;
 
 }

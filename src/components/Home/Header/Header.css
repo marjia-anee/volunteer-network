@@ -9,20 +9,22 @@
 .header nav{
     line-height: 60px;
     font-size: 20px;
+    margin-right: 10%;
+    text-decoration: none;
 }
 nav a{
     text-align: right;
     color: black;
-    margin-right: 20px;
+    margin-right: 30px;
     padding: 5px;
     margin-top: 10px;
+    text-decoration: none;
+
     
-}
-nav a:hover{
-    background-color: gray;
 }
 
 .btn{
     margin-left:20px;
+    width : 140px;
   
 }

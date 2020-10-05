@@ -8,7 +8,7 @@ const Header = () => {
         <div>
             <div className="header d-flex">
                 <img src={logo} alt="" />
-                <nav className="ml-auto px-5">
+                <nav className="ml-auto">
                     <Link to="/home">Home</Link>
                     <Link to="/donation">Donation</Link>
                     <Link to="/events">Events</Link>
@@ -16,7 +16,7 @@ const Header = () => {
 
 
                     <button className = "btn btn-primary">Register</button>
-                    <button className = "btn btn-dark">Admin</button>
+                  <Link to="/events">  <button className = "btn btn-dark">Admin</button> </Link>
 
                 </nav>
             </div>

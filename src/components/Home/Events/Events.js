@@ -1,28 +1,31 @@
-import React from 'react';
-import fakeData from '../../../fakeData/fakeData';
+import React, { useState } from 'react';
 
 const Events = () => {
+
+    const [tasks, setTasks] = useState([])
+
     const handleAddTasks = () => {
 
-        const tasks = {};
 
         fetch('http://localhost:5000/addTasks', {
             method: 'POST',
             headers: { 
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(fakeData)
+            body: JSON.stringify(setTasks)
         })
     }
 
     return (
-        <div>
+        <div className = "text-center m-5">
+            <h2>Add New Volunteer Task:</h2>
+            <br/>
             <form action="">
-                <p><span>Task Name</span><input type="text"/></p>
-                <p><span>Task Description</span><input type="text"/></p>
-                <p><span>Task Image</span><input type="file"/></p>
+                <p><span>Task Name:</span><input type="text"/></p>
+                <p><span>Task Description:</span><input type="text"/></p>
+                <p><span>Task Image:</span><input type="file"/></p>
             </form>
-            <button onClick={handleAddTasks}>Add Tasks</button>
+            <button className = "btn btn-primary"onClick={handleAddTasks}>Add Tasks</button>
         </div>
     );
 };

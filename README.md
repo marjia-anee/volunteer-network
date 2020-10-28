@@ -23,6 +23,6 @@ A full-stack web app for Volunteer service provider.
 - Firebase auth
 - Heroku
 
-## [Live](https://ema-john-simple-fe020.firebaseapp.com/)
+## [Live](https://volunteer-network-3ce83.web.app/)
 
-## [Server Side Code](https://github.com/marjia-anee/ema-john-simple-server)
+## [Server Side Code](https://github.com/marjia-anee/volunteer-network-server)
